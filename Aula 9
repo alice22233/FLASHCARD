@@ -1,0 +1,12 @@
+let respostaEstaVisivel = false
+function viraCartao(){
+    respostaestaVisivel = !respostaEstaVisivel
+}
+.cartao.active .cartao__conteudo {
+    transform: rotateY(180deg);
+}
+function viraCartao() {
+    respostaEstaVisivel = !respostaEstaVisivel
+    cartao.classList.toggle('active', respostaEstaVisivel)
+}
+cartao.addEventListener('click', viraCartao)
